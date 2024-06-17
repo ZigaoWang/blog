@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://example.com/2024/y6-eng-sci-review/</loc>
+    <loc>https://zigao.cc/2024/y6-eng-sci-review/</loc>
     
     <lastmod>2024-06-17</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://example.com/2024/github-video/</loc>
+    <loc>https://zigao.cc/2024/github-video/</loc>
     
     <lastmod>2024-06-17</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://example.com/tags/index.html</loc>
+    <loc>https://zigao.cc/tags/index.html</loc>
     
     <lastmod>2024-06-17</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://example.com/categories/index.html</loc>
+    <loc>https://zigao.cc/categories/index.html</loc>
     
     <lastmod>2024-06-17</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://example.com/projects/index.html</loc>
+    <loc>https://zigao.cc/projects/index.html</loc>
     
     <lastmod>2024-06-17</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://example.com/about/index.html</loc>
+    <loc>https://zigao.cc/about/index.html</loc>
     
     <lastmod>2024-06-17</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://example.com/2024/hello-world/</loc>
+    <loc>https://zigao.cc/2024/hello-world/</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -66,7 +66,7 @@
   
 
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://zigao.cc/</loc>
     <lastmod>2024-06-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -74,14 +74,35 @@
 
   
   <url>
-    <loc>https://example.com/tags/GitHub/</loc>
+    <loc>https://zigao.cc/tags/GitHub/</loc>
     <lastmod>2024-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/Science/</loc>
+    <loc>https://zigao.cc/tags/Science/</loc>
+    <lastmod>2024-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/Biology/</loc>
+    <lastmod>2024-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/Physics/</loc>
+    <lastmod>2024-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/Chemistry/</loc>
     <lastmod>2024-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -90,7 +111,14 @@
 
   
   <url>
-    <loc>https://example.com/categories/Fun/</loc>
+    <loc>https://zigao.cc/categories/Fun/</loc>
+    <lastmod>2024-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/categories/Review-Document/</loc>
     <lastmod>2024-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
