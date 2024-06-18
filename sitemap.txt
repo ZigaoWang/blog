@@ -1,9 +1,10 @@
+https://zigao.cc/2024/cpu-architectures/
+https://zigao.cc/about/index.html
+https://zigao.cc/projects/index.html
 https://zigao.cc/categories/index.html
 https://zigao.cc/2024/y6-eng-sci-review/
 https://zigao.cc/2024/github-video/
 https://zigao.cc/tags/index.html
-https://zigao.cc/projects/index.html
-https://zigao.cc/about/index.html
 https://zigao.cc/2024/hello-world/
 https://zigao.cc/
 https://zigao.cc/tags/GitHub/
@@ -11,5 +12,12 @@ https://zigao.cc/tags/Science/
 https://zigao.cc/tags/Biology/
 https://zigao.cc/tags/Physics/
 https://zigao.cc/tags/Chemistry/
+https://zigao.cc/tags/CPU/
+https://zigao.cc/tags/Architecture/
+https://zigao.cc/tags/ARM/
+https://zigao.cc/tags/x86/
+https://zigao.cc/tags/Technology/
+https://zigao.cc/tags/x64/
 https://zigao.cc/categories/Fun/
 https://zigao.cc/categories/Review-Document/
+https://zigao.cc/categories/Tech-Insights/

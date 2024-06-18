@@ -15,7 +15,7 @@
 
 
 
-<title>Categories | Zigao Wang</title>
+<title>Tag: ARM | Zigao Wang</title>
 
 
 
@@ -510,183 +510,231 @@
   </div>
 </div>
   <main>
-    <!-- css -->
-
-<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
-
+    <section class="px-2 py-8 max-w-prose mx-auto gap-4 grid grid-cols-1">
   
-<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
-
-    <!-- toc -->
+  <!-- Sort posts by date -->
+  
+  
     
-<section class="px-6 max-w-prose mx-auto md:px-0">
-  <!-- Post header before content -->
-  <header class="py-4">
-    <div class="flex flex-col gap-2 pt-4 md:pt-6">
-      <!-- Title -->
-      <div id="article-title" class="leading-snug">
-        <p class="text-3xl font-bold text-[var(--c-100)] mb-4">Categories</p>
+    <!-- Large text showing the year in the background -->
+    
+      <div class="relative pointer-events-none h-[30px]">
+        <div class="absolute -top-6 w-[100%]">
+          <p class="
+            text-clip overflow-hidden -translate-x-3 text-9xl
+            font-extrabold
+            text-[var(--c-theme)]
+            opacity-10
+            dark:opacity-20">
+            2024
+          </p>
+        </div>
       </div>
-      <!-- Meta data -->
-      <div>
-        <section class="
-          flex flex-col gap-x-2 gap-y-1 text-sm text-[var(--c-100)]">
-          <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <!-- Dates -->
-            <div class="flex items-center gap-1">
-              <iconify-icon width="18" icon="mingcute:add-circle-fill" ></iconify-icon>
-              Created: <time class="w-max">2024-06-17</time>
-            </div>
-            <div class="flex items-center gap-1">
-              <iconify-icon width="18" icon="mingcute:refresh-3-fill" ></iconify-icon>
-              Edited: <time class="w-max">2024-06-18</time>
-            </div>
-          </div>
-          <div class="flex flex-wrap items-center gap-x-3 gap-y-3">
-            <!-- Author -->
+    
+    <!-- The post -->
+    <div class="w-full">
+      <!-- One post item in a list -->
+<div class="
+    post-container
+    px-2 py-2
+    flex flex-col gap-3">
+    <div class="flex flex-row gap-4">
+        
+            <div class="flex flex-col gap-1">
+                <!-- Post title -->
+                <a href="/2024/cpu-architectures/">
+                    <h2 class="
+                        text-[var(--c-80)]
+                        font-bold
+                        text-xl
+                        hover:text-[var(--c-theme)]
+                        transition-all
+                        hover:underline">
+                        Exploring CPU Architectures Understanding ARM, x86, and More
+                    </h2>
+                </a>
+            <!-- Post excerpt -->
             
-
-            <!-- Word count -->
-            <span class="flex items-center gap-1">
-              <iconify-icon width="18" icon="mingcute:book-2-fill" ></iconify-icon>
-              <span>0 words, 1 min</span>
+            </div>
+        </div>
+        <!-- Post Statistics -->
+        <div class="flex flex-wrap items-center gap-x-2 text-sm
+            text-[var(--c-70)]">
+            <span class="flex flex-row items-center gap-1 group">
+                <iconify-icon width="16"
+                    icon="mingcute:add-circle-fill"></iconify-icon>
+                <time class="w-max">
+                    2024-06-18
+                </time>
+            </span>
+            <span class="flex flex-row items-center gap-1 group">
+                <iconify-icon width="16"
+                    icon="mingcute:refresh-3-fill"></iconify-icon>
+                <time class="w-max">
+                    2024-06-18
+                </time>
+            </span>
+            <span class="flex flex-row items-center gap-1 group">
+                <iconify-icon width="16"
+                    icon="mingcute:book-2-fill"></iconify-icon>
+                <p class="w-max">
+                    851 words, 5 min
+                </p>
             </span>
             <!-- Categories -->
+            <span class="flex flex-row items-center gap-1 group">
+                
+                    <iconify-icon class="
+                            group-hover:scale-125
+                            transition-transform
+                            group-hover:text-[var(--c-theme)]
+                        "
+                        width="16"
+                        icon="mingcute:classify-2-fill" class="mr-0">
+                    </iconify-icon>
+                    
+                        <a class="underline underline-offset-2"
+                            href="/categories/tech-insights/">
+                            Tech Insights
+                        </a>
+                    
+                
+            </span>
+        </div>
+        <!-- Tags -->
+        <div>
             
-          </div>
-        </section>
-      </div>
-      <!-- tags -->
-      <div>
-        
+                
 <div class="flex flex-wrap gap-1">
   
+    
+      <a href="/tags/CPU/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        CPU
+      </a>
+    
+      <a href="/tags/Architecture/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        Architecture
+      </a>
+    
+      <a href="/tags/ARM/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        ARM
+      </a>
+    
+      <a href="/tags/x86/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        x86
+      </a>
+    
+      <a href="/tags/Technology/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        Technology
+      </a>
+    
+      <a href="/tags/x64/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        x64
+      </a>
+    
+  
 </div>
-      </div>
+            
+        </div>
+</div>
     </div>
-  </header>
-  <!-- content -->
-  <article class="post-content prose m-auto dark:prose-invert">
-    
-  </article>
-
-  <!-- prev and next -->
-  <div class="flex justify-between mt-4 pt-4
-    border-t border-[var(--c-sep)] text-sm
-    gap-2 text-[var(--c-50)]
-  ">
-    <div>
-      
-    </div>
-    <div>
-      
-    </div>
-  </div>
-
-  <!-- comment -->
-  <div class="article-comments mt-12">
-    
-
-  </div>
+  
 </section>
-<!-- js inspect -->
 
-<script src="/lib/clipboard.min.js"></script>
+<div class="border-t border-[--c-40]">
 
+</div>
 
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    "HTML-CSS": {
-        preferredFont: "TeX",
-        availableFonts: ["STIX","TeX"],
-        linebreaks: { automatic:true },
-        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
-    },
-    tex2jax: {
-        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
-        processEscapes: true,
-        ignoreClass: "tex2jax_ignore|dno",
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {
-        equationNumbers: { autoNumber: "AMS" },
-        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
-        Macros: { href: "{}" }
-    },
-    messageStyle: "none"
-  });
-</script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-  });
-</script>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-  $(document).ready(() => {
-    const maraidConfig = {
-      theme: "default",
-      logLevel: 3,
-      flowchart: { curve: "linear" },
-      gantt: { axisFormat: "%m/%d/%Y" },
-      sequence: { actorMargin: 50 },
-    };
-    mermaid.initialize(maraidConfig);
-  });
-</script>
-
-
-
-<script src="/lib/fancybox/fancybox.umd.min.js"></script>
-
-<script>
-  $(document).ready(() => {
-    $('.post-content').each(function(i){
-      $(this).find('img').each(function(){
-        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
-        var alt = this.alt;
-        var title = this.title;
-        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
-        if (title) $(this).after('<span class="fancybox-title">' + title + '</span>');
-        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
-      });
-      $(this).find('.fancybox').each(function(){
-        $(this).attr('rel', 'article' + i);
-      });
-    });
-
-    Fancybox.bind('[data-fancybox="gallery"]', {
-        // options
-    })
-  })
-</script>
-
-<!-- tocbot begin -->
-
-<script src="/lib/tocbot/tocbot.min.js"></script>
-
-<script>
-  $(document).ready(() => {
-      tocbot.init({
-        // Where to render the table of contents.
-        tocSelector: '.post-toc',
-        // Where to grab the headings to build the table of contents.
-        contentSelector: '.post-content',
-        // Which headings to grab inside of the contentSelector element.
-        headingSelector: 'h1, h2, h3',
-        // For headings inside relative or absolute positioned containers within content.
-        hasInnerContainers: true,
-    });
-  })
-</script>
-<!-- tocbot end -->
 
   </main>
   <footer class="flex flex-col mt-18 mb-12 items-center
