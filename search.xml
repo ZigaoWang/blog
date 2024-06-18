@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>Exploring CPU Architectures Understanding ARM, x86, and More</title>
+      <title>Exploring CPU Architectures - Understanding ARM, x86, and More</title>
       <link href="/2024/cpu-architectures/"/>
       <url>/2024/cpu-architectures/</url>
       
@@ -14,6 +14,8 @@
       <categories>
           
           <category> Tech Insights </category>
+          
+          <category> Hardware &amp; Reviews </category>
           
       </categories>
       
@@ -70,16 +72,45 @@
     
     
     <entry>
+      <title>Hello World</title>
+      <link href="/2024/hello-world/"/>
+      <url>/2024/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hardware &amp; Reviews </category>
+          
+          <category> Tech Insights </category>
+          
+          <category> Software &amp; Development </category>
+          
+          <category> AI &amp; Machine Learning </category>
+          
+          <category> Cybersecurity </category>
+          
+          <category> Review Document </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用GitHub自建视频床</title>
-      <link href="/2024/github-video/"/>
-      <url>/2024/github-video/</url>
+      <link href="/2023/github-video/"/>
+      <url>/2023/github-video/</url>
       
         <content type="html"><![CDATA[<p>很多人想要把自己做的视频放到网上，但是发现各种云服务器或流量的价格太贵了。这时候，就可以用免费、可靠的GitHub来自建视频床。这是一种将视频文件存储在GitHub仓库中，并通过链接在博客或网站中嵌入视频的方法。以下是详细的操作步骤：</p><h3 id="步骤-1-创建GitHub仓库"><a href="#步骤-1-创建GitHub仓库" class="headerlink" title="步骤 1: 创建GitHub仓库"></a>步骤 1: 创建GitHub仓库</h3><ol><li>登录GitHub并点击右上角的加号按钮，选择”New repository”创建一个新的仓库。</li><li>给仓库起一个名称，设置为公开（Public）并选择其他适当的选项。</li><li>点击”Create repository”创建仓库。</li></ol><h3 id="步骤-2-安装ffmpeg"><a href="#步骤-2-安装ffmpeg" class="headerlink" title="步骤 2: 安装ffmpeg"></a>步骤 2: 安装ffmpeg</h3><p>由于GitHub单个文件的上传限制是25MB，所以我们需要把视频切片成多个文件来上传。这个时候，我们需要安装使用ffmpeg。</p><p>如果你使用的是macOS，在终端中运行以下命令来安装ffmpeg：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install ffmpeg</span><br></pre></td></tr></table></figure><p>如果你使用的是其他操作系统，请自行查找并安装ffmpeg工具。</p><h3 id="步骤-3-视频文件切片"><a href="#步骤-3-视频文件切片" class="headerlink" title="步骤 3: 视频文件切片"></a>步骤 3: 视频文件切片</h3><p>在终端中，使用以下命令将视频文件切片成HLS格式（.m3u8和.ts文件）：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i <span class="string">&#x27;视频文件名称&#x27;</span> -c:v h264 -flags +cgop -g 30 -hls_time 5 -hls_list_size 0 -hls_segment_filename index%3d.ts <span class="string">&#x27;index.m3u8&#x27;</span></span><br></pre></td></tr></table></figure><ul><li><code>-c:v h264</code>: 使用H.264视频编码。</li><li><code>-hls_time 5</code>: 设置每个切片的时长为5秒，你可以根据需要进行调整。</li><li><code>-hls_list_size 0</code>: 设置.m3u8播放列表的大小，0表示不限制大小。</li><li><code>-hls_segment_filename index%3d.ts</code>: 设置.ts切片文件的命名规则。</li></ul><p>切片完成后，将生成的.m3u8和.ts文件保存到一个文件夹中，以便后续管理。</p><h3 id="步骤-4-将切片上传到GitHub仓库"><a href="#步骤-4-将切片上传到GitHub仓库" class="headerlink" title="步骤 4: 将切片上传到GitHub仓库"></a>步骤 4: 将切片上传到GitHub仓库</h3><ol><li>将切片文件夹中的所有文件添加到你的GitHub仓库中。</li><li>提交更改并将切片文件推送到GitHub仓库。</li></ol><h3 id="步骤-5-获取视频链接"><a href="#步骤-5-获取视频链接" class="headerlink" title="步骤 5: 获取视频链接"></a>步骤 5: 获取视频链接</h3><p>你的.m3u8使用jsd加速的链接格式为：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/用户名/仓库名/文件夹名/index.m3u8</span><br></pre></td></tr></table></figure><h3 id="步骤-6-插入视频到博客中"><a href="#步骤-6-插入视频到博客中" class="headerlink" title="步骤 6: 插入视频到博客中"></a>步骤 6: 插入视频到博客中</h3><p>在你的博客文章中，使用以下代码来嵌入视频：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/hls.js@latest&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">&quot;video&quot;</span> <span class="attr">controls</span> <span class="attr">loop</span>=<span class="string">&quot;false&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">var</span> video = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;video&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">if</span> (<span class="title class_">Hls</span>.<span class="title function_">isSupported</span>()) &#123;</span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> hls = <span class="keyword">new</span> <span class="title class_">Hls</span>();</span></span><br><span class="line"><span class="language-javascript">    hls.<span class="title function_">loadSource</span>(<span class="string">&#x27;m3u8视频地址&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">    hls.<span class="title function_">attachMedia</span>(video);</span></span><br><span class="line"><span class="language-javascript">    hls.<span class="title function_">on</span>(<span class="title class_">Hls</span>.<span class="property">Events</span>.<span class="property">MANIFEST_PARSED</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">      video.<span class="title function_">play</span>();</span></span><br><span class="line"><span class="language-javascript">    &#125;);</span></span><br><span class="line"><span class="language-javascript">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (video.<span class="title function_">canPlayType</span>(<span class="string">&#x27;application/vnd.apple.mpegurl&#x27;</span>)) &#123;</span></span><br><span class="line"><span class="language-javascript">    video.<span class="property">src</span> = <span class="string">&#x27;m3u8视频地址&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">    video.<span class="title function_">addEventListener</span>(<span class="string">&#x27;loadedmetadata&#x27;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">      video.<span class="title function_">play</span>();</span></span><br><span class="line"><span class="language-javascript">    &#125;);</span></span><br><span class="line"><span class="language-javascript">  &#125;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>将上述代码中的<code>m3u8视频地址</code>替换为你在步骤5中获取的.m3u8链接。</p><p>通过以上步骤，你可以将视频文件存储在GitHub仓库中，并在博客中嵌入使用HLS.js进行播放的视频。确保仓库和视频文件是公开可访问的，以便他人能够观看你的视频。</p><p>希望这篇文章对你有帮助，如果遇到任何问题，请随时联系我，谢谢！</p>]]></content>
       
       
       <categories>
           
-          <category> Fun </category>
+          <category> Software &amp; Development </category>
           
       </categories>
       
@@ -89,19 +120,6 @@
             <tag> GitHub </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2024/hello-world/"/>
-      <url>/2024/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
