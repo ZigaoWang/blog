@@ -38,6 +38,8 @@
     <category term="Hardware &amp; Reviews" scheme="https://zigao.cc/categories/Tech-Insights/Hardware-Reviews/"/>
     
     
+    <category term="Technology" scheme="https://zigao.cc/tags/Technology/"/>
+    
     <category term="CPU" scheme="https://zigao.cc/tags/CPU/"/>
     
     <category term="Architecture" scheme="https://zigao.cc/tags/Architecture/"/>
@@ -45,8 +47,6 @@
     <category term="ARM" scheme="https://zigao.cc/tags/ARM/"/>
     
     <category term="x86" scheme="https://zigao.cc/tags/x86/"/>
-    
-    <category term="Technology" scheme="https://zigao.cc/tags/Technology/"/>
     
     <category term="x64" scheme="https://zigao.cc/tags/x64/"/>
     
