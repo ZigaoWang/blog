@@ -1,6 +1,6 @@
+https://zigao.cc/2024/cpu-architectures/
 https://zigao.cc/2024/internet-history/
 https://zigao.cc/2023/github-video/
-https://zigao.cc/2024/cpu-architectures/
 https://zigao.cc/2024/hello-world/
 https://zigao.cc/about/index.html
 https://zigao.cc/projects/index.html
@@ -19,6 +19,10 @@ https://zigao.cc/tags/Science/
 https://zigao.cc/tags/Biology/
 https://zigao.cc/tags/Physics/
 https://zigao.cc/tags/Chemistry/
+https://zigao.cc/tags/Internet/
+https://zigao.cc/tags/World-Wide-Web/
+https://zigao.cc/tags/History/
+https://zigao.cc/tags/Website/
 https://zigao.cc/categories/Tech-Insights/
 https://zigao.cc/categories/Software-Development/
 https://zigao.cc/categories/Tech-Insights/Hardware-Reviews/
@@ -29,3 +33,4 @@ https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/
 https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/AI-Machine-Learning/
 https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/AI-Machine-Learning/Cybersecurity/
 https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/AI-Machine-Learning/Cybersecurity/Review-Document/
+https://zigao.cc/categories/Tech-History/
