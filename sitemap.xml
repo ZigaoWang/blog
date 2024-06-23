@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zigao.cc/projects/index.html</loc>
+    <loc>https://zigao.cc/2024/cpu-architectures/</loc>
     
     <lastmod>2024-06-23</lastmod>
     
@@ -11,18 +11,18 @@
   </url>
   
   <url>
-    <loc>https://zigao.cc/2024/cpu-architectures/</loc>
+    <loc>https://zigao.cc/2024/internet-history/</loc>
     
-    <lastmod>2024-06-22</lastmod>
+    <lastmod>2024-06-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zigao.cc/2024/internet-history/</loc>
+    <loc>https://zigao.cc/projects/index.html</loc>
     
-    <lastmod>2024-06-22</lastmod>
+    <lastmod>2024-06-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
