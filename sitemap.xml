@@ -92,42 +92,7 @@
 
   
   <url>
-    <loc>https://zigao.cc/tags/Internet/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zigao.cc/tags/World-Wide-Web/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zigao.cc/tags/History/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zigao.cc/tags/Website/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zigao.cc/tags/Technology/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zigao.cc/tags/GitHub/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -169,6 +134,41 @@
   </url>
   
   <url>
+    <loc>https://zigao.cc/tags/GitHub/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/Internet/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/World-Wide-Web/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/History/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/Website/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zigao.cc/tags/Science/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -199,7 +199,35 @@
 
   
   <url>
+    <loc>https://zigao.cc/categories/Tech-Insights/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/categories/Software-Development/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zigao.cc/categories/Hardware-Reviews/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/categories/Tech-History/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/categories/Tech-Insights/Hardware-Reviews/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -241,35 +269,7 @@
   </url>
   
   <url>
-    <loc>https://zigao.cc/categories/Tech-History/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zigao.cc/categories/Software-Development/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zigao.cc/categories/Tech-Insights/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zigao.cc/categories/Review-Document/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zigao.cc/categories/Tech-Insights/Hardware-Reviews/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
