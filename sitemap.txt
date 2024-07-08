@@ -1,3 +1,4 @@
+https://zigao.cc/2024/trees-and-binary-trees/
 https://zigao.cc/2024/cpu-architectures/
 https://zigao.cc/2024/internet-history/
 https://zigao.cc/projects/index.html
@@ -23,6 +24,10 @@ https://zigao.cc/tags/Science/
 https://zigao.cc/tags/Biology/
 https://zigao.cc/tags/Physics/
 https://zigao.cc/tags/Chemistry/
+https://zigao.cc/tags/C/
+https://zigao.cc/tags/Data-Structures/
+https://zigao.cc/tags/Trees/
+https://zigao.cc/tags/Binary-Trees/
 https://zigao.cc/categories/Tech-Insights/
 https://zigao.cc/categories/Software-Development/
 https://zigao.cc/categories/Hardware-Reviews/
@@ -34,3 +39,4 @@ https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/
 https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/AI-Machine-Learning/Cybersecurity/
 https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/AI-Machine-Learning/Cybersecurity/Review-Document/
 https://zigao.cc/categories/Review-Document/
+https://zigao.cc/categories/Programming/
