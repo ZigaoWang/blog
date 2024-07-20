@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2W85G2973"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2W85G2973');
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Zigao Wang">
+
+
+
+
+
+<title>The Birth of the Internet - The Story Behind the World Wide Web | Zigao Wang</title>
+
+
+
+<link rel="icon" href="https://img.zigao.wang/zigao.webp">
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/css/search.css">
+
+
+
+<script src="/lib/jquery.min.js"></script>
+
+
+<script src="/lib/iconify-icon.min.js"></script>
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+  };
+</script>
+
+<script>
+  (function () {
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+    if (setting === "dark" || (prefersDark && setting !== "light"))
+      document.documentElement.classList.toggle("dark", true);
+    let isDark = document.documentElement.classList.contains("dark");
+  })();
+
+  $(document).ready(function () {
+    // init icon
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = document.documentElement.classList.contains("dark");
+    $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
+
+    function toggleGiscusTheme() {
+      const isDark = document.documentElement.classList.contains("dark");
+      const giscusFrame = document.querySelector("iframe.giscus-frame");
+      if (giscusFrame) {
+        giscusFrame.contentWindow.postMessage(
+          {
+            giscus: {
+              setConfig: {
+                theme: isDark ? "dark" : "light",
+              },
+            },
+          },
+          "https://giscus.app"
+        );
+      }
+    }
+
+
+    // toggle dark mode
+    function toggleDark() {
+      let isDark = document.documentElement.classList.contains("dark");
+      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+      isDark = !isDark;
+      document.documentElement.classList.toggle("dark", isDark);
+      $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
+      if (prefersDark === isDark) {
+        localStorage.setItem("hexo-color-scheme", "auto");
+      } else {
+        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
+      }
+      toggleGiscusTheme();
+    }
+    $("#toggle-dark").click(toggleDark);
+
+    // listen dark mode change
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) => {
+        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
+        if (setting === "auto") {
+          document.documentElement.classList.toggle("dark", e.matches);
+          $("#theme-icon").attr(
+            "icon",
+            e.matches ? "ic:round-dark-mode" : "ic:round-light-mode"
+          );
+          toggleGiscusTheme();
+        }
+      });
+  });
+</script>
+
+
+
+
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="Zigao Wang" type="application/atom+xml">
+</head>
+<body 
+  class="
+    bg-[var(--c-0)]
+    text-[var(--c-80)]
+  ">
+  <!-- The navigation bar -->
+<header class="
+    flex flex-row items-center
+    w-full
+    pr-4
+    z-10
+    border-b-[1px]
+    border-b-[var(--c-border)]
+    dark:bg-[var(--c-0)]
+    dark:border-b-[var(--c-0)]
+    gap-2
+    h-[var(--h-header)]
+    text-[var(--c-80)]
+">
+  <!-- Left part -->
+  <div class="overflow-hidden h-full flex flex-row items-center">
+    <!-- Site Title on the top left -->
+    <a href="/" class="
+            whitespace-nowrap
+            text-2xl
+            text-[var(--c-theme)]
+            hover:text-[var(--c-theme)]
+            pl-4
+            font-black
+            bg-gradient-to-r from-cyan-500
+            to-blue-500 bg-clip-text text-transparent
+          ">
+      Zigao Wang
+    </a>
+  </div>
+  <!-- Div for pushing items to both sides -->
+  <div class="flex-1"></div>
+  <!-- Right part -->
+  <div class="flex flex-row items-center z-20 h-full">
+    <!-- Page links -->
+    <div class="hidden sm:flex flex-row h-full">
+      
+      
+      
+      
+      
+      
+      <a href="/index" class="
+                        flex flex-row items-center
+                        gap-1
+                        hover:underline
+                        hover:bg-[var(--c-20)]
+                        hover:text-[var(--c-theme)]
+                        transition-all
+                        px-2
+                        py-1
+                        my-1
+                        rounded-lg
+                        group
+                    ">
+        
+        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:home-2-fill" width="22">
+        </iconify-icon>
+        
+        
+        <p>Home</p>
+        
+      </a>
+      
+      
+      
+      
+      
+      
+      <a href="/./archives" class="
+                        flex flex-row items-center
+                        gap-1
+                        hover:underline
+                        hover:bg-[var(--c-20)]
+                        hover:text-[var(--c-theme)]
+                        transition-all
+                        px-2
+                        py-1
+                        my-1
+                        rounded-lg
+                        group
+                    ">
+        
+        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:inbox-fill" width="22">
+        </iconify-icon>
+        
+        
+        <p>Posts</p>
+        
+      </a>
+      
+      
+      
+      
+      
+      
+      <a href="/./projects" class="
+                        flex flex-row items-center
+                        gap-1
+                        hover:underline
+                        hover:bg-[var(--c-20)]
+                        hover:text-[var(--c-theme)]
+                        transition-all
+                        px-2
+                        py-1
+                        my-1
+                        rounded-lg
+                        group
+                    ">
+        
+        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:science-fill" width="22">
+        </iconify-icon>
+        
+        
+        <p>Projects</p>
+        
+      </a>
+      
+      
+      
+      
+      
+      
+      <a target="_blank" rel="noopener" href="https://zigao.wang" class="
+                        flex flex-row items-center
+                        gap-1
+                        hover:underline
+                        hover:bg-[var(--c-20)]
+                        hover:text-[var(--c-theme)]
+                        transition-all
+                        px-2
+                        py-1
+                        my-1
+                        rounded-lg
+                        group
+                    ">
+        
+        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:user-info-fill" width="22">
+        </iconify-icon>
+        
+        
+        <p>About</p>
+        
+      </a>
+      
+    </div>
+    <!-- Icons on the right -->
+    <div class="flex flex-row items-center">
+
+      <!-- TODO: Add search icon here -->
+
+      <!-- Dark/light toggle icon -->
+      <a class="flex group p-1" title="toggle theme" id="toggle-dark">
+        <iconify-icon class="transition-transform
+                    group-hover:rotate-[45deg]
+                    group-hover:scale-125
+                    group-hover:text-[var(--c-theme)]" width="24" id="theme-icon">
+        </iconify-icon>
+      </a>
+      <!-- Icon for dropout menu on small screens -->
+      <div class="flex p-1 mx-1 sm:hidden">
+        <a class="w-5 h-5" aria-hidden="true" id="open-menu">
+          <iconify-icon width="24" icon="mingcute:menu-fill" class="transition-transform hover:scale-125 hover:rotate-[5deg]">
+          </iconify-icon>
+        </a>
+        <a class="w-5 h-5 hidden" aria-hidden="true" id="close-menu">
+          <iconify-icon width="24" icon="mingcute:close-circle-fill" class="transition-transform hover:scale-125 hover:rotate-[80deg]">
+          </iconify-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Dropdown menu on small screens -->
+<div id="menu-panel" class="
+        h-0
+        overflow-hidden
+        sm:hidden
+        w-full
+        z-10
+        rounded
+    ">
+  <div id="menu-content" class="
+        flex
+        flex-row
+        justify-center
+        items-center
+        font-bold
+        text-xl
+        border-b-[1px]
+        relative
+        z-20
+        border-[var(--c-sep)]
+        px-2
+        py-2
+        -translate-y-full
+        transition-transform
+        duration-200
+        ">
+    
+    
+    
+    <a href="/index" class="
+                flex flex-row items-center
+                gap-2
+                h-12
+                hover:underline
+                hover:bg-[var(--c-20)]
+                px-3
+                py-1
+                rounded-lg
+            ">
+      <iconify-icon icon="mingcute:home-2-fill" width="22">
+      </iconify-icon>
+      <p>
+        home
+      </p>
+    </a>
+    
+    
+    
+    
+    <a href="/./archives" class="
+                flex flex-row items-center
+                gap-2
+                h-12
+                hover:underline
+                hover:bg-[var(--c-20)]
+                px-3
+                py-1
+                rounded-lg
+            ">
+      <iconify-icon icon="mingcute:inbox-fill" width="22">
+      </iconify-icon>
+      <p>
+        posts
+      </p>
+    </a>
+    
+    
+    
+    
+    <a href="/./projects" class="
+                flex flex-row items-center
+                gap-2
+                h-12
+                hover:underline
+                hover:bg-[var(--c-20)]
+                px-3
+                py-1
+                rounded-lg
+            ">
+      <iconify-icon icon="mingcute:science-fill" width="22">
+      </iconify-icon>
+      <p>
+        projects
+      </p>
+    </a>
+    
+    
+    
+    
+    <a target="_blank" rel="noopener" href="https://zigao.wang" class="
+                flex flex-row items-center
+                gap-2
+                h-12
+                hover:underline
+                hover:bg-[var(--c-20)]
+                px-3
+                py-1
+                rounded-lg
+            ">
+      <iconify-icon icon="mingcute:user-info-fill" width="22">
+      </iconify-icon>
+      <p>
+        about
+      </p>
+    </a>
+    
+    
+  </div>
+</div>
+  <main>
+    <!-- css -->
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+  
+<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
+
+    <!-- toc -->
+    
+  <!-- tocbot -->
+<nav class="post-toc toc text-sm w-40 relative top-32 right-4 opacity-70 hidden lg:block" style="position: fixed !important;"></nav>
+
+
+<section class="px-6 max-w-prose mx-auto md:px-0">
+  <!-- Post header before content -->
+  <header class="py-4">
+    <div class="flex flex-col gap-2 pt-4 md:pt-6">
+      <!-- Title -->
+      <div id="article-title" class="leading-snug">
+        <p class="text-3xl font-bold text-[var(--c-100)] mb-4">The Birth of the Internet - The Story Behind the World Wide Web</p>
+      </div>
+      <!-- Meta data -->
+      <div>
+        <section class="
+          flex flex-col gap-x-2 gap-y-1 text-sm text-[var(--c-100)]">
+          <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <!-- Dates -->
+            <div class="flex items-center gap-1">
+              <iconify-icon width="18" icon="mingcute:add-circle-fill" ></iconify-icon>
+              Created: <time class="w-max">2024-06-19</time>
+            </div>
+            <div class="flex items-center gap-1">
+              <iconify-icon width="18" icon="mingcute:refresh-3-fill" ></iconify-icon>
+              Edited: <time class="w-max">2024-06-23</time>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-x-3 gap-y-3">
+            <!-- Author -->
+            
+
+            <!-- Word count -->
+            <span class="flex items-center gap-1">
+              <iconify-icon width="18" icon="mingcute:book-2-fill" ></iconify-icon>
+              <span>1k words, 6 min</span>
+            </span>
+            <!-- Categories -->
+            
+              <!-- <span class="text-gray-400">·</span> -->
+              <span class="flex flex-row items-center gap-1 group hover:underline">
+                <iconify-icon class="transition-all group-hover:scale-125 mr-0"
+                  width="18"
+                  icon="mingcute:classify-2-fill">
+                </iconify-icon>
+                <a class="article-category-link" href="/categories/Tech-History/">Tech History</a>
+              </span>
+            
+          </div>
+        </section>
+      </div>
+      <!-- tags -->
+      <div>
+        
+<div class="flex flex-wrap gap-1">
+  
+    
+      <a href="/tags/Technology/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        Technology
+      </a>
+    
+      <a href="/tags/Internet/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        Internet
+      </a>
+    
+      <a href="/tags/World-Wide-Web/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        World Wide Web
+      </a>
+    
+      <a href="/tags/History/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        History
+      </a>
+    
+      <a href="/tags/Website/" 
+        class="
+          tag
+          text-sm
+          rounded-full
+          px-[5px]
+          border-[1px]
+          border-[var(--c-theme)]
+          text-[var(--c-theme)]
+          bg-[var(--c-0)]
+          dark:bg-[var(--c-0)]
+          dark:drop-shadow-none
+          hover:bg-[var(--c-theme)]
+          hover:text-[var(--c-0)]
+          dark:hover:text-[var(--c-theme-2)]
+        ">
+        Website
+      </a>
+    
+  
+</div>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <article class="post-content prose m-auto dark:prose-invert">
+    <p>Welcome back to Zigao Wang’s Blog! Today, we’re going to talk about how the Internet and the World Wide Web came to be. From the early days of networking to the creation of the first website, this is the story of how the Internet was invented and how it has changed our lives.</p>
+<h2 id="The-Early-Days-ARPANET-and-Networking"><a href="#The-Early-Days-ARPANET-and-Networking" class="headerlink" title="The Early Days: ARPANET and Networking"></a>The Early Days: ARPANET and Networking</h2><p>The story of the Internet starts in the 1960s. During this time, the United States Department of Defense wanted a way to ensure communication could continue even if parts of the network were destroyed. This led to the development of ARPANET (Advanced Research Projects Agency Network).</p>
+<h3 id="ARPANET-The-First-Network"><a href="#ARPANET-The-First-Network" class="headerlink" title="ARPANET: The First Network"></a>ARPANET: The First Network</h3><p>In 1969, ARPANET became the first successful attempt at creating a network that could connect different computers. The first message sent over ARPANET was supposed to be “LOGIN,” but the system crashed after the first two letters, so the first message ended up being just “LO.” Despite this rocky start, ARPANET quickly grew, connecting more universities and research centers.</p>
+<p><img src="https://img.zigao.wang/240619-internet-history/arpanet-map.jpg" alt="A map of ARPANET, the precursor to the internet, showing the 111 computer terminals connected to the network in 1977."></p>
+<img alt="The first message sent on the internet — On October 29th, 1969 Charlie Kline sent the internet’s first message “lo.” He had attempted to write the word “login,” but the system crashed before he could type the “g.”" src="https://img.zigao.wang/240619-internet-history/first-message.jpg" width="300"/>
+
+<h3 id="Packet-Switching"><a href="#Packet-Switching" class="headerlink" title="Packet Switching"></a>Packet Switching</h3><p>One of the key ideas behind ARPANET was packet switching. This method breaks data into small packets that are sent independently over the network and then reassembled at their destination. This was more efficient and reliable than the older methods of sending data.</p>
+<h2 id="The-1970s-and-1980s-Building-the-Foundation"><a href="#The-1970s-and-1980s-Building-the-Foundation" class="headerlink" title="The 1970s and 1980s: Building the Foundation"></a>The 1970s and 1980s: Building the Foundation</h2><p>The 1970s and 1980s saw a lot of progress in networking technologies. Many researchers and engineers were working on different projects that would eventually come together to form the modern Internet.</p>
+<h3 id="TCP-IP-The-Internet’s-Language"><a href="#TCP-IP-The-Internet’s-Language" class="headerlink" title="TCP&#x2F;IP: The Internet’s Language"></a>TCP&#x2F;IP: The Internet’s Language</h3><p>In 1974, Vint Cerf and Bob Kahn introduced the Transmission Control Protocol (TCP) and the Internet Protocol (IP), or TCP&#x2F;IP. These protocols provided a standard way for different networks to communicate with each other. By 1983, ARPANET had adopted TCP&#x2F;IP, which helped create a more unified network.</p>
+<p><img src="https://img.zigao.wang/240619-internet-history/vint-cerf-bob-kahn.jpg" alt="Vint Cerf and Bob Kahn"></p>
+<h3 id="The-Expansion-of-ARPANET"><a href="#The-Expansion-of-ARPANET" class="headerlink" title="The Expansion of ARPANET"></a>The Expansion of ARPANET</h3><p>Throughout the 1970s, ARPANET continued to grow, connecting more institutions and developing new applications. By the early 1980s, it was clear that networking technology had a lot of potential.</p>
+<h3 id="The-Birth-of-Email"><a href="#The-Birth-of-Email" class="headerlink" title="The Birth of Email"></a>The Birth of Email</h3><p>One of the most important developments during this time was the invention of email. In 1971, Ray Tomlinson sent the first email message. He used the “@” symbol to separate the user’s name from the computer’s name, a convention we still use today. Email quickly became one of the most popular uses of ARPANET.</p>
+<img alt="Raymond Tomlinson" src="https://img.zigao.wang/240619-internet-history/raymond-tomlinson-email.jpg" width="350"/>
+
+<h2 id="The-World-Wide-Web-Bringing-It-All-Together"><a href="#The-World-Wide-Web-Bringing-It-All-Together" class="headerlink" title="The World Wide Web: Bringing It All Together"></a>The World Wide Web: Bringing It All Together</h2><p>While the foundations of the Internet were being laid, the idea of the World Wide Web was still taking shape. This idea would become a reality thanks to the work of Tim Berners-Lee.</p>
+<h3 id="Tim-Berners-Lee-Inventing-the-Web"><a href="#Tim-Berners-Lee-Inventing-the-Web" class="headerlink" title="Tim Berners-Lee: Inventing the Web"></a>Tim Berners-Lee: Inventing the Web</h3><p>Tim Berners-Lee, a British computer scientist working at CERN (the European Organization for Nuclear Research), saw the need for a better way to share information among researchers. In 1989, he proposed a system that used hypertext to link documents together, creating a “web” of information that could be accessed through a simple interface.</p>
+<p><img src="https://img.zigao.wang/240619-internet-history/tim-berners-lee-web.jpg" alt="Tim Berners-Lee"></p>
+<h3 id="Creating-the-Web-HTML-HTTP-and-URLs"><a href="#Creating-the-Web-HTML-HTTP-and-URLs" class="headerlink" title="Creating the Web: HTML, HTTP, and URLs"></a>Creating the Web: HTML, HTTP, and URLs</h3><p>To make his vision a reality, Berners-Lee developed three key technologies:</p>
+<ol>
+<li><strong>HTML (HyperText Markup Language)</strong>: A language for creating web pages.</li>
+<li><strong>HTTP (HyperText Transfer Protocol)</strong>: A protocol for transferring web pages over the Internet.</li>
+<li><strong>URL (Uniform Resource Locator)</strong>: Addresses for locating web pages.</li>
+</ol>
+<p>With these technologies, Berners-Lee created the first web browser and web server, allowing users to access and navigate the web.</p>
+<h3 id="The-First-Website"><a href="#The-First-Website" class="headerlink" title="The First Website"></a>The First Website</h3><p>On August 6, 1991, Berners-Lee launched the world’s first website, hosted on his NeXT computer at CERN. The website, titled “World Wide Web,” provided information about the web project, including how to create web pages and set up web servers. The URL for this historic site was <a target="_blank" rel="noopener" href="http://info.cern.ch/">http://info.cern.ch</a>.</p>
+<p><img src="https://img.zigao.wang/240619-internet-history/www.jpg" alt="The First Website: World Wide Web in the 1990s"></p>
+<p>The first website was simple, consisting of basic text and hyperlinks, but it represented a huge leap forward in information sharing.</p>
+<h2 id="The-Web-Goes-Public"><a href="#The-Web-Goes-Public" class="headerlink" title="The Web Goes Public"></a>The Web Goes Public</h2><p>In 1993, the World Wide Web began to gain traction. CERN announced that the web would be free for anyone to use, allowing developers and researchers around the world to contribute to its growth.</p>
+<h3 id="The-Rise-of-Web-Browsers"><a href="#The-Rise-of-Web-Browsers" class="headerlink" title="The Rise of Web Browsers"></a>The Rise of Web Browsers</h3><p>One of the key factors in the web’s rapid growth was the development of user-friendly web browsers. In 1993, Marc Andreessen and Eric Bina at the National Center for Supercomputing Applications (NCSA) released Mosaic, the first widely-used web browser. Mosaic’s graphical interface made it much easier for people to use the web.</p>
+<p><img src="https://img.zigao.wang/240619-internet-history/mosaic-browser.jpg" alt="Mosaic Browser"></p>
+<h3 id="The-Birth-of-the-Modern-Internet"><a href="#The-Birth-of-the-Modern-Internet" class="headerlink" title="The Birth of the Modern Internet"></a>The Birth of the Modern Internet</h3><p>With the development of web browsers and the adoption of common standards, the Internet began to grow rapidly. By the mid-1990s, it had become a global network, connecting millions of people and changing the way we communicate, work, and play.</p>
+<h2 id="The-Impact-of-the-Internet"><a href="#The-Impact-of-the-Internet" class="headerlink" title="The Impact of the Internet"></a>The Impact of the Internet</h2><p>The invention of the Internet and the World Wide Web has had a profound impact on nearly every aspect of our lives. Here are just a few ways it has changed the world:</p>
+<h3 id="Communication"><a href="#Communication" class="headerlink" title="Communication"></a>Communication</h3><p>The Internet has revolutionized communication. Email, instant messaging, and social media have made it possible to connect with people around the world instantly.</p>
+<h3 id="Information-Access"><a href="#Information-Access" class="headerlink" title="Information Access"></a>Information Access</h3><p>The web has made it easier than ever to access information. With just a few clicks, you can find information on nearly any topic, from academic research to DIY projects.</p>
+<h3 id="Commerce"><a href="#Commerce" class="headerlink" title="Commerce"></a>Commerce</h3><p>The Internet has transformed commerce, giving rise to e-commerce giants like Amazon and eBay. Online shopping has become a major part of the global economy.</p>
+<h3 id="Entertainment"><a href="#Entertainment" class="headerlink" title="Entertainment"></a>Entertainment</h3><p>From streaming movies and music to playing online games, the Internet has changed the way we entertain ourselves.</p>
+<h3 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h3><p>Online education has made learning more accessible. Platforms like Coursera, Khan Academy, and others provide high-quality educational resources to people around the world.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The story of the Internet and the World Wide Web is a testament to human ingenuity and collaboration. From the early days of ARPANET to the launch of the first website, countless individuals and institutions have contributed to the development of this revolutionary technology. As we continue to explore the possibilities of the Internet, it’s clear that it will remain a vital part of our lives for years to come.</p>
+<p>The journey of the Internet is far from over, and its future holds countless possibilities for further innovation and discovery. Until next time, happy browsing!</p>
+
+  </article>
+
+  <!-- prev and next -->
+  <div class="flex justify-between mt-4 pt-4
+    border-t border-[var(--c-sep)] text-sm
+    gap-2 text-[var(--c-50)]
+  ">
+    <div>
+      
+        <a href="/2024/trees-and-binary-trees/"
+          class="
+            transition-all
+            flex justify-center
+            hover:-translate-x-1
+            hover:text-[var(--c-80)]
+          ">
+          <iconify-icon width="20" icon="mingcute:left-fill" data-inline="false">
+          </iconify-icon>
+          Review of Trees and Binary Trees in C++
+        </a>
+      
+    </div>
+    <div>
+      
+        <a href="/2024/cpu-architectures/"
+          class="
+            flex 
+            justify-center
+            hover:translate-x-1 
+            transition-transform
+            hover:text-[var(--c-100)]
+          "
+        >
+          Exploring CPU Architectures - Understanding ARM, x86, and More
+          <iconify-icon width="20" icon="mingcute:right-fill" data-inline="false"></iconify-icon>
+        </a>
+      
+    </div>
+  </div>
+
+  <!-- comment -->
+  <div class="article-comments mt-12">
+    
+
+  </div>
+</section>
+<!-- js inspect -->
+
+<script src="/lib/clipboard.min.js"></script>
+
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
+
+
+
+<script src="/lib/fancybox/fancybox.umd.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        var title = this.title;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        if (title) $(this).after('<span class="fancybox-title">' + title + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.post-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.post-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+  })
+</script>
+<!-- tocbot end -->
+
+  </main>
+  <footer class="flex flex-col mt-18 mb-12 items-center
+  text-[var(--c-50)] text-sm">
+  <div class="flex flex-row items-center my-12">
+    
+    
+        
+        
+            
+            
+        
+        <a class="
+            hover:text-[var(--c-theme)]
+            hover:bg-[var(--c-20)]
+            rounded-lg
+            p-2
+            my-1
+            flex flex-row items-center
+            group" title="Github" target="_blank" rel="noopener" href="https://www.github.com/ZigaoWang">
+            <iconify-icon width="28" icon="mingcute:github-fill"></iconify-icon>
+        </a>
+    
+        
+        
+            
+            
+        
+        <a class="
+            hover:text-[var(--c-theme)]
+            hover:bg-[var(--c-20)]
+            rounded-lg
+            p-2
+            my-1
+            flex flex-row items-center
+            group" title="Twitter" target="_blank" rel="noopener" href="https://www.twitter.com/ZigaoW">
+            <iconify-icon width="28" icon="mingcute:social-x-fill"></iconify-icon>
+        </a>
+    
+        
+        
+            
+            
+        
+        <a class="
+            hover:text-[var(--c-theme)]
+            hover:bg-[var(--c-20)]
+            rounded-lg
+            p-2
+            my-1
+            flex flex-row items-center
+            group" title="YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/@zigaow">
+            <iconify-icon width="28" icon="mingcute:youtube-fill"></iconify-icon>
+        </a>
+    
+
+  </div>
+  <!-- busuanzi -->
+  <div class="mb-6">
+    
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- Busuanzi Analytics -->
+<div class="flex flex-col items-center mb-2">
+  <div class="flex flex-row items-center">
+    <iconify-icon width="16" icon="ic:round-person" width="18"></iconify-icon>
+    <span class="mr-1">访客 Visitors: </span>
+    <span id="busuanzi_value_site_uv"></span>
+  </div>
+  <div class="flex flex-row items-center">
+    <iconify-icon width="16" icon="carbon:view-filled" width="18"></iconify-icon>
+    <span class="mx-1">浏览量 Page Views:</span>
+    <span id="busuanzi_value_site_pv"></span>
+  </div>
+</div>
+<!-- End Busuanzi Analytics -->
+
+
+  </div>
+  <!-- copyright -->
+  <div class="flex flex-row items-center gap-2">
+    <a class="hover:underline"
+      target="_blank"
+      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    >
+      CC BY-NC-SA 4.0
+    </a>
+    <span>© 2022-2024</span>
+    <a class="hover:underline"
+    href="https://github.com/chen-yingfa" 
+    target="_blank" 
+    rel="noopener noreferrer">陈英发</a>
+  </div>
+  <!-- powered by -->
+  <div class="flex items-center gap-1">
+    <span>Powered by</span>
+    <a class="hover:underline" 
+    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
+    class="hover:underline"
+    target="_blank"
+      rel="noopener noreferrer"
+      >
+      枫叶 Fengye
+    </a>
+  </div>
+
+</footer>
+
+  <div class="
+    back-to-top
+    fixed right-6
+    z-1024
+    -bottom-20
+    rounded-lg
+    font-bold
+    py-1 px-2
+    text-[var(--c-80)]
+    bg-[var(--c-20)]
+    cursor-pointer
+    text-center
+    drop-shadow-md
+  ">
+    <span class="flex justify-center items-center text-sm">
+      <span id="scrollpercent"><span>0</span> %</span>
+      <iconify-icon width="18" icon="mingcute:arrow-to-up-fill" id="go-top"></iconify-icon>
+    </span>
+  </div>
+  
+<script src="/js/main.js"></script>
+
+
+  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+</body>
+
+</html>
