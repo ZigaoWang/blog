@@ -1,3 +1,4 @@
+https://zigao.cc/2024/cpp-notes/
 https://zigao.cc/2024/AIGC/
 https://zigao.cc/2024/trees-and-binary-trees/
 https://zigao.cc/2024/cpu-architectures/
@@ -32,6 +33,8 @@ https://zigao.cc/tags/Binary-Trees/
 https://zigao.cc/tags/AI/
 https://zigao.cc/tags/AIGC/
 https://zigao.cc/tags/ChatGPT/
+https://zigao.cc/tags/Notes/
+https://zigao.cc/tags/Programming/
 https://zigao.cc/categories/Tech-Insights/
 https://zigao.cc/categories/Software-Development/
 https://zigao.cc/categories/Hardware-Reviews/

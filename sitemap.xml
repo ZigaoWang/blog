@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zigao.cc/2024/cpp-notes/</loc>
+    
+    <lastmod>2024-07-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zigao.cc/2024/AIGC/</loc>
     
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -103,7 +112,7 @@
 
   <url>
     <loc>https://zigao.cc/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,154 +120,168 @@
   
   <url>
     <loc>https://zigao.cc/tags/Technology/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/CPU/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Architecture/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/ARM/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/x86/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/x64/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/GitHub/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Internet/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/World-Wide-Web/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/History/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Website/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Science/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Biology/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Physics/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Chemistry/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/C/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Data-Structures/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Trees/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/Binary-Trees/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/AI/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/AIGC/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/tags/ChatGPT/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/Notes/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zigao.cc/tags/Programming/</loc>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -267,84 +290,84 @@
   
   <url>
     <loc>https://zigao.cc/categories/Tech-Insights/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Software-Development/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Hardware-Reviews/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Tech-History/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Tech-Insights/Hardware-Reviews/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/AI-Machine-Learning/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/AI-Machine-Learning/Cybersecurity/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Hardware-Reviews/Tech-Insights/Software-Development/AI-Machine-Learning/Cybersecurity/Review-Document/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Review-Document/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zigao.cc/categories/Programming/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
